@@ -9,7 +9,7 @@ function displayResponse(response) {
   let iconElement = document.querySelector("#icon");
   let date = new Date(response.data.time * 1000);
 
-  cityElement.innerElement = response.data.city;
+  cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = "${response.data.humidity}%";
@@ -31,7 +31,7 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-  let day = days[day.getDate()];
+  let day = days[date.getDay()];
 
   if (minutes < 10) {
     minutes = "0${minutes}";
