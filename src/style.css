@@ -52,10 +52,10 @@ main {
 }
 
 .weather-app-temperature {
-  font-size: 88px;
-  line-height: 88px;
+  font-size: 8px;
+  line-height: 68px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .weather-app-unit {
